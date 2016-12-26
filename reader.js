@@ -16,7 +16,7 @@ function handleLog() {
         fileDisplayArea.innerText = readFile;
     } else {
         var lines = readFile.split(/[\r\n]+/g);
-        var filterArray = filterText.replace(' ','')
+        var filterArray = filterText.replace(', ',',')
         filterArray = filterArray.split(',');
         var result = '';
         for(var i = 0; i < lines.length; i++) {
